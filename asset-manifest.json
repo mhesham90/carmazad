@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/carmazad/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/carmazad/static/js/main.0d4c5e76.chunk.js",
-    "main.js.map": "/carmazad/static/js/main.0d4c5e76.chunk.js.map",
-    "runtime-main.js": "/carmazad/static/js/runtime-main.ccedc530.js",
-    "runtime-main.js.map": "/carmazad/static/js/runtime-main.ccedc530.js.map",
-    "static/js/2.951831fe.chunk.js": "/carmazad/static/js/2.951831fe.chunk.js",
-    "static/js/2.951831fe.chunk.js.map": "/carmazad/static/js/2.951831fe.chunk.js.map",
-    "index.html": "/carmazad/index.html",
-    "precache-manifest.76f6254d0e075851d16a0abae0c5e73f.js": "/carmazad/precache-manifest.76f6254d0e075851d16a0abae0c5e73f.js",
-    "service-worker.js": "/carmazad/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/carmazad/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.951831fe.chunk.js.LICENSE.txt": "/carmazad/static/js/2.951831fe.chunk.js.LICENSE.txt",
-    "static/media/logo2.png": "/carmazad/static/media/logo2.181f277a.png"
+    "main.css": "/autoauction/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/autoauction/static/js/main.355eb1a0.chunk.js",
+    "main.js.map": "/autoauction/static/js/main.355eb1a0.chunk.js.map",
+    "runtime-main.js": "/autoauction/static/js/runtime-main.760c067e.js",
+    "runtime-main.js.map": "/autoauction/static/js/runtime-main.760c067e.js.map",
+    "static/js/2.951831fe.chunk.js": "/autoauction/static/js/2.951831fe.chunk.js",
+    "static/js/2.951831fe.chunk.js.map": "/autoauction/static/js/2.951831fe.chunk.js.map",
+    "index.html": "/autoauction/index.html",
+    "precache-manifest.c9443c321740cae7ef70070ca569d5dc.js": "/autoauction/precache-manifest.c9443c321740cae7ef70070ca569d5dc.js",
+    "service-worker.js": "/autoauction/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/autoauction/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.951831fe.chunk.js.LICENSE.txt": "/autoauction/static/js/2.951831fe.chunk.js.LICENSE.txt",
+    "static/media/logo2.png": "/autoauction/static/media/logo2.181f277a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ccedc530.js",
+    "static/js/runtime-main.760c067e.js",
     "static/js/2.951831fe.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.0d4c5e76.chunk.js"
+    "static/js/main.355eb1a0.chunk.js"
   ]
 }
