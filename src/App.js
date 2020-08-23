@@ -16,10 +16,10 @@ function App() {
       <Router>
         <TopBar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="listing" element={<Listing />} />
-          <Route path="details" element={<Details />} />
-          <Route path="sellcar" element={<SellCar />} />
+          <Route path="/autoauction" element={<Home />} />
+          <Route path="/autoauction/listing" element={<Listing />} />
+          <Route path="/autoauction/details" element={<Details />} />
+          <Route path="/autoauction/sellcar" element={<SellCar />} />
         </Routes>
       </Router>
     </ThemeProvider>

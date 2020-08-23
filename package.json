@@ -2,7 +2,7 @@
   "name": "carmazad",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mhesham90.github.io/carmazad",
+  "homepage": "http://mhesham90.github.io/autoauction",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
