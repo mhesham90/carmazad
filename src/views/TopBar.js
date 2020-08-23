@@ -3,6 +3,7 @@ import { makeStyles, AppBar, Toolbar, Box, Button, IconButton, Typography } from
 import Flag from 'react-world-flags'
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import PersonIcon from '@material-ui/icons/Person';
+import { useHistory } from "react-router-dom";
 import logo from '../assets/logo2.png'; 
 
 const useTopBarStyles = makeStyles({
@@ -19,11 +20,13 @@ const useTopBarStyles = makeStyles({
 
 function TopBar({ children, fullWidth = false }) {
   const classes = useTopBarStyles();
+  const history = useHistory();
+  const onRedirectHome = () => history.push("/");
   return (
     <AppBar className={classes.TopBar}>
       <Toolbar style={{ padding: 10 }}>
         <Box flexGrow={1}>
-          <img src={logo} alt="Auto Auction" width={150}/>
+          <img src={logo} alt="Auto Auction" width={150} onClick={onRedirectHome} style={{cursor: 'pointer'}}/>
         </Box>
         <Box>
           <Typography style={{ display: 'inline', margin: '0 10px' }}>UAE</Typography>

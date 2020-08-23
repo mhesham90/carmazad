@@ -11,5 +11,14 @@ export function getTheme() {
       default: { main: '#E0E0E0', contrastText: '#02647A'  },
       background: { default: '#EFF1F7' },
     },
+    overrides: {
+      MuiGrid: {
+        root: {
+          '& div[class^="Carousel-indicators"]': {
+            marginTop: -30,
+          }
+        }
+      }
+    },
   });
 }

@@ -8,6 +8,19 @@ export const useGlobalStyles = makeStyles({
         backgroundColor: '#fdb81e',
       },
     },
+    '.bid-button': {
+      '&.MuiButton-text': {
+        color: '#000',
+        '&:hover': {
+          color: '#FFF',          
+          backgroundColor: '#02647A',
+        },
+        '&>.MuiButton-label': {
+          flexDirection: 'column',
+          alignItems: 'flex-end',
+        },
+      },
+    },
     '.danger-button': {
       '&.MuiButton-contained': {
         color: '#FFF',
