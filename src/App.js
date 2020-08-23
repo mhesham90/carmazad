@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from '@material-ui/core';
 import TopBar from "./views/TopBar";
 import { getTheme } from './styles/theme';
@@ -16,12 +16,12 @@ function App() {
     <ThemeProvider theme={getTheme()}>
       <Router basename={process.env.PUBLIC_URL}>
         <TopBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/listing" element={<Listing />} />
-          <Route path="/details" element={<Details />} />
-          <Route path="/sellcar" element={<SellCar />} />
-        </Routes>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/listing" component={Listing} />
+          <Route path="/details" component={Details} />
+          <Route path="/sellcar" component={SellCar} />
+        </Switch>
       </Router>
     </ThemeProvider>
   );
