@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/carmazad/precache-manifest.34d2ef27ea31563209d3fba3b4196bdd.js"
+  "/carmazad/precache-manifest.de89549e4605a015a8a319391e9a9fcb.js"
 );
 
 self.addEventListener('message', (event) => {
