@@ -13,7 +13,7 @@ function App() {
   useGlobalStyles();
   return (
     <ThemeProvider theme={getTheme()}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <TopBar />
         <Routes>
           <Route path="/carmazad" element={<Home />} />
