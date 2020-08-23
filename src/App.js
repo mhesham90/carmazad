@@ -16,10 +16,10 @@ function App() {
       <Router basename={process.env.PUBLIC_URL}>
         <TopBar />
         <Routes>
-          <Route path="/carmazad" element={<Home />} />
-          <Route path="/carmazad/listing" element={<Listing />} />
-          <Route path="/carmazad/details" element={<Details />} />
-          <Route path="/carmazad/sellcar" element={<SellCar />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/listing" element={<Listing />} />
+          <Route path="/details" element={<Details />} />
+          <Route path="/sellcar" element={<SellCar />} />
         </Routes>
       </Router>
     </ThemeProvider>
