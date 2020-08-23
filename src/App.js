@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from '@material-ui/core';
+import TopBar from "./views/TopBar";
+import { getTheme } from './styles/theme';
+import { useGlobalStyles } from './styles/globalStyles';
+import Home from "./views/Home";
+import Listing from "./views/Listing";
+import Details from "./views/Details";
+import SellCar from "./views/SellCar";
 
 function App() {
+  useGlobalStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={getTheme()}>
+      <Router>
+        <TopBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="listing" element={<Listing />} />
+          <Route path="details" element={<Details />} />
+          <Route path="sellcar" element={<SellCar />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 
