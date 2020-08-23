@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/carmazad/static/css/main.5f361e03.chunk.css",
+    "main.js": "/carmazad/static/js/main.0f10a64f.chunk.js",
+    "main.js.map": "/carmazad/static/js/main.0f10a64f.chunk.js.map",
+    "runtime-main.js": "/carmazad/static/js/runtime-main.ccedc530.js",
+    "runtime-main.js.map": "/carmazad/static/js/runtime-main.ccedc530.js.map",
+    "static/js/2.baef6389.chunk.js": "/carmazad/static/js/2.baef6389.chunk.js",
+    "static/js/2.baef6389.chunk.js.map": "/carmazad/static/js/2.baef6389.chunk.js.map",
+    "index.html": "/carmazad/index.html",
+    "precache-manifest.6c735aeb0bdbe533d792538aa95fa623.js": "/carmazad/precache-manifest.6c735aeb0bdbe533d792538aa95fa623.js",
+    "service-worker.js": "/carmazad/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/carmazad/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.baef6389.chunk.js.LICENSE.txt": "/carmazad/static/js/2.baef6389.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/carmazad/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ccedc530.js",
+    "static/js/2.baef6389.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.0f10a64f.chunk.js"
+  ]
+}
