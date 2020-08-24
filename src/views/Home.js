@@ -70,35 +70,30 @@ var sectionStyle = {
   backgroundImage: `url(${logo})`,
   marginTop: "-1px",
   color: "white",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
 };
 var headerStyle = {
-  marginTop: 0,
-  paddingBottom: "30px",
+  marginTop: 100,
+  marginBottom: 0,
   fontSize: "54px",
   lineHeight: "68px",
   fontWeight: 300,
   position: "relative",
-  top: "100px",
-  left: "450px",
-  width: "50%"
 };
 var textStyle = {
   paddingBottom: "30px",
-
+  marginTop: 0,
   fontSize: "34px",
   lineHeight: "68px",
   fontWeight: 300,
   position: "relative",
-  top: "50px",
-  left: "600px",
-  width: "50%"
 };
 var filterContainerStyle = {
   width: 1000,
   height: 80,
   position: "relative",
-  top: "25px",
-  left: "320px",
   backgroundColor: "white",
   borderRadius: "10px",
   padding: 30,
@@ -108,10 +103,10 @@ function Home() {
   const classes = useStyles();
   const history = useHistory();
   const onSearch = () => history.push("listing");
-  const [make, setMake] = useState(Object.keys(cars)[0]);
+  const [make, setMake] = useState(Object.keys(cars)[4]);
   const [model, setModel] = useState(cars[make][0]);
   const [fromYear, setFromYear] = useState(years[0]);
-  const [toYear, setToYear] = useState(years[1]);
+  const [toYear, setToYear] = useState(years[20]);
 
   return (
     <div style={sectionStyle}>
