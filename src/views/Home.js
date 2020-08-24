@@ -90,7 +90,7 @@ var textStyle = {
   fontWeight: 300,
   position: "relative",
   top: "50px",
-  left: "500px",
+  left: "600px",
   width: "50%"
 };
 var filterContainerStyle = {
@@ -116,7 +116,7 @@ function Home() {
   return (
     <div style={sectionStyle}>
       <h1 style={headerStyle}> Get Your Car From Auto Auction</h1>
-      <h3 style={textStyle}>Over 150,000 used & new vehicles available</h3>
+      <h3 style={textStyle}>Over 150,000 vehicles available</h3>
       <div style={filterContainerStyle}>
         <FormControl variant="outlined" className={classes.formControl}>
           <InputLabel id="make-outlined-label">Make</InputLabel>

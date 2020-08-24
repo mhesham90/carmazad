@@ -27,10 +27,10 @@ const useStyles = makeStyles((theme) => ({
 function Listing() {
   const classes = useStyles();
   const history = useHistory();
-  const onSearch = () => history.push("details");
+  const onSearch = (lot) => history.push("details/"+lot);
 
   return (
-    <Box style={{ padding: '10px 200px' }}>
+    <Box style={{ padding: '10px 200px', background:'#F1F1F8' }}>
       <Box display='flex' style={{justifyContent: 'flex-end'}}>      
           <Button variant="text" startIcon={<SaveIcon />} style={{ marginLeft: '10px' }}>Save Search</Button>
           <Button variant="text" startIcon={<TuneIcon />} style={{ marginLeft: '10px' }}>Filters</Button>
@@ -46,7 +46,7 @@ function Listing() {
       </Box>
       <Grid container className={classes.root}>
         {CARS.map( car => (
-          <Grid item key={car.lot} xs={4} onClick={onSearch} style={{cursor: 'pointer'}}>
+          <Grid item key={car.lot} xs={4} onClick={() => { onSearch(car.lot)}} style={{cursor: 'pointer'}}>
             <Card className={classes.card}>
               <Carousel
                 autoPlay={false}
@@ -55,7 +55,7 @@ function Listing() {
                 navButtonsAlwaysVisible={true}
               >
                 {car.imgs.map( (img, index) => (
-                  <img key={index} src={img.full} alt='no pics available' width="100%" height="290px"/>
+                  <img key={index} src={img.original} alt='no pics available' width="100%" height="290px"/>
                 ))}
               </Carousel>
               <Box className={classes.box}>
@@ -92,7 +92,7 @@ function Listing() {
                 <Box className={classes.box} style={{ display: 'flex' }}>
                   <Button variant='text' className="bid-button" >
                     <Typography style={{fontSize: '12px'}}>CURRENT BID (AED) </Typography>
-                    <Typography variant="h6">{(car.currentBid * 3 || Math.random() * (40000 - 10000) + 10000).toLocaleString(undefined, {maximumFractionDigits:0})}</Typography>
+                    <Typography variant="h6">{(car.currentBid > 500 ? (car.currentBid * 3) : Math.random() * (40000 - 10000) + 10000).toLocaleString(undefined, {maximumFractionDigits:0})}</Typography>
                   </Button>
                 </Box>   
               </Box>              

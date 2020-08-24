@@ -11,7 +11,7 @@ import SellCar from "./views/SellCar";
 
 function App() {
   useGlobalStyles();
-  console.log(process.env.PUBLIC_URL)
+
   return (
     <ThemeProvider theme={getTheme()}>
       <Router basename={process.env.PUBLIC_URL}>
@@ -19,7 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/listing" component={Listing} />
-          <Route path="/details" component={Details} />
+          <Route path="/details/:id" component={Details} />
           <Route path="/sellcar" component={SellCar} />
         </Switch>
       </Router>

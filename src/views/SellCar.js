@@ -5,7 +5,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
   root: {
-    marginTop: 20
+    paddingTop: 20,
+    background:'#F1F1F8'
   },
   formHeading: {
     marginBottom: 20

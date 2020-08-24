@@ -16,7 +16,7 @@ export function getTheme() {
         root: {
           '& div[class^="Carousel-indicators"]': {
             marginTop: -30,
-          }
+          },
         }
       }
     },
