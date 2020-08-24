@@ -8,6 +8,7 @@ import Home from "./views/Home";
 import Listing from "./views/Listing";
 import Details from "./views/Details";
 import SellCar from "./views/SellCar";
+import login from "./views/Login";
 
 function App() {
   useGlobalStyles();
@@ -21,6 +22,7 @@ function App() {
           <Route path="/listing" component={Listing} />
           <Route path="/details/:id" component={Details} />
           <Route path="/sellcar" component={SellCar} />
+          <Route path="/login" component={login} />
         </Switch>
       </Router>
     </ThemeProvider>

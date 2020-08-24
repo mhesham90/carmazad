@@ -115,7 +115,8 @@ function TopBar({ children, fullWidth = false }) {
           </Button>
           {location.pathname === "/" ?
             <Box display="flex" justifyContent="flex-end">
-              <Button color="inherit" startIcon={<PersonIcon />} >SIGN IN</Button>
+              <Link to="/login" style={{'text-decoration': 'none'}}>
+                <Button color="inherit" color="secondary"  startIcon={<PersonIcon />} >SIGN IN</Button></Link>
               <Link to="/sellcar">
                 <Button color="default" variant="contained" className='yellow-button' style={{ margin: '0 20px', borderRadius: 25 }}>SELL YOUR CAR</Button>
               </Link>
