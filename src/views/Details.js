@@ -8,6 +8,12 @@ import Carousel from 'react-material-ui-carousel'
 import { useParams } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import { CARS } from "../constants";
+import TextField from '@material-ui/core/TextField';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -53,7 +59,15 @@ function Details() {
   const onBack = () => history.push("/listing");
   let { id } = useParams();
   const car = CARS.find( car => car.lot == id)
+  const [open, setOpen] = React.useState(false);
 
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   
   
 
@@ -115,7 +129,7 @@ function Details() {
                       </Typography>
                     </ListItem>
                     <ListItem style={{ padding: 0 }}>
-                      <Button variant="contained" color="primary">BID NOW</Button>
+                      <Button variant="contained" onClick={handleClickOpen} color="primary">BID NOW</Button>
                     </ListItem>
                   </List>
                 </Grid>
@@ -168,6 +182,31 @@ function Details() {
             </Card>
           </Grid>
         </Grid>
+        <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
+        <DialogTitle id="form-dialog-title">Place your Bid</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            To place your bid for this car, please enter the amount. We will send updates
+            occasionally.
+          </DialogContentText>
+          <TextField
+            autoFocus
+            margin="dense"
+            id="name"
+            label="Amount"
+            type="email"
+            fullWidth
+          />
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} color="primary">
+            Cancel
+          </Button>
+          <Button onClick={handleClose} color="primary">
+            Place Bid
+          </Button>
+        </DialogActions>
+      </Dialog>
       </Box>
     </Box>
   )

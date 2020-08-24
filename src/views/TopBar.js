@@ -28,7 +28,8 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import PersonIcon from '@material-ui/icons/Person';
 import { useHistory } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
-import logo from '../assets/logo2.png'; 
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo2.png';
 
 const useTopBarStyles = makeStyles({
   TopBar: {
@@ -66,42 +67,42 @@ function TopBar({ children, fullWidth = false }) {
     history.push("/listing");
     setMenuOpen(false);
   }
-  
+
   let location = useLocation();
-  
+
 
   return (
     <AppBar className={classes.TopBar}>
       <Toolbar style={{ padding: 10 }}>
-        <Box flexGrow={1} style={{display: 'flex'}}>
-          <IconButton aria-label="menu" onClick={() => {setMenuOpen(true)}} style={{marginRight: 15}}>
-            <MenuRoundedIcon fontSize="large" style={{color: '#000000'}}/>
+        <Box flexGrow={1} style={{ display: 'flex' }}>
+          <IconButton aria-label="menu" onClick={() => { setMenuOpen(true) }} style={{ marginRight: 15 }}>
+            <MenuRoundedIcon fontSize="large" style={{ color: '#000000' }} />
           </IconButton>
-          <Drawer anchor="left" open={menuOpen} onClose={() => {setMenuOpen(false)}} classes={{ paper: classes.drawerPaper }}>
-            <List style={{width: 250}}>
+          <Drawer anchor="left" open={menuOpen} onClose={() => { setMenuOpen(false) }} classes={{ paper: classes.drawerPaper }}>
+            <List style={{ width: 250 }}>
               <ListItem button onClick={onRedirectHome}>
-                <ListItemIcon style={{color:'inherit'}}><HomeIcon color="inherit"/></ListItemIcon>
+                <ListItemIcon style={{ color: 'inherit' }}><HomeIcon color="inherit" /></ListItemIcon>
                 <ListItemText primary="Home" />
               </ListItem>
               <ListItem button onClick={onRedirectlist}>
-                <ListItemIcon style={{color:'inherit'}}><GavelIcon color="inherit"/></ListItemIcon>
+                <ListItemIcon style={{ color: 'inherit' }}><GavelIcon color="inherit" /></ListItemIcon>
                 <ListItemText primary="Live Auction" />
               </ListItem>
               <ListItem button onClick={onRedirectSellCar}>
-                <ListItemIcon style={{color:'inherit'}}><AttachMoneyIcon color="inherit"/></ListItemIcon>
+                <ListItemIcon style={{ color: 'inherit' }}><AttachMoneyIcon color="inherit" /></ListItemIcon>
                 <ListItemText primary="Sell Your Car" />
               </ListItem>
               <ListItem button>
-                <ListItemIcon style={{color:'inherit'}}><PolicyIcon color="inherit"/></ListItemIcon>
+                <ListItemIcon style={{ color: 'inherit' }}><PolicyIcon color="inherit" /></ListItemIcon>
                 <ListItemText primary="Rules and Policies" />
               </ListItem>
               <ListItem button>
-                <ListItemIcon style={{color:'inherit'}}><MailIcon color="inherit"/></ListItemIcon>
+                <ListItemIcon style={{ color: 'inherit' }}><MailIcon color="inherit" /></ListItemIcon>
                 <ListItemText primary="Contact Us" />
               </ListItem>
             </List>
           </Drawer>
-          <img src={logo} alt="Auto Auction" width={150} onClick={onRedirectHome} style={{cursor: 'pointer'}}/>
+          <img src={logo} alt="Auto Auction" width={150} onClick={onRedirectHome} style={{ cursor: 'pointer' }} />
         </Box>
         <Box>
           <Typography style={{ display: 'inline', margin: '0 10px' }}>UAE</Typography>
@@ -115,7 +116,9 @@ function TopBar({ children, fullWidth = false }) {
           {location.pathname === "/" ?
             <Box display="flex" justifyContent="flex-end">
               <Button color="inherit" startIcon={<PersonIcon />} >SIGN IN</Button>
-              <Button color="default" variant="contained" className='yellow-button' style={{ margin: '0 20px', borderRadius: 25 }}>REGISTER NOW</Button>
+              <Link to="/sellcar">
+                <Button color="default" variant="contained" className='yellow-button' style={{ margin: '0 20px', borderRadius: 25 }}>SELL YOUR CAR</Button>
+              </Link>
             </Box>
             :
             <Box display="flex" justifyContent="flex-end" alignItems="center">
@@ -131,7 +134,7 @@ function TopBar({ children, fullWidth = false }) {
               </IconButton>
               <IconButton aria-label="user" style={{ marginRight: '20px' }}>
                 <Avatar className={classes.orange}>H</Avatar>
-              </IconButton>                
+              </IconButton>
             </Box>
           }
         </Box>

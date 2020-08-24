@@ -2,11 +2,13 @@ import React from 'react';
 import { Typography, Container, FormControl, InputLabel, Select, MenuItem, TextField, Switch, FormControlLabel, Button, Box } from '@material-ui/core';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
+
 
 const useStyles = makeStyles({
   root: {
     paddingTop: 20,
-    background:'#F1F1F8'
+    background: '#F1F1F8'
   },
   formHeading: {
     marginBottom: 20
@@ -24,7 +26,8 @@ const useStyles = makeStyles({
   },
   buttonContainer: {
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    paddingBottom: 20
   }
 });
 
@@ -206,8 +209,12 @@ function SellCar() {
         </FormControl>
 
         <Box className={classes.buttonContainer}>
-          <Button variant="contained" style={{ "margin-right": "10px" }} color="primary">Submit</Button>
-          <Button variant="contained">Cancel</Button>
+          <Link to="/listing">
+            <Button variant="contained" style={{ "margin-right": "10px" }} color="primary">Submit</Button>
+          </Link>
+          <Link to="/listing">
+            <Button variant="contained">Cancel</Button>
+          </Link>
         </Box>
       </Container>
     </div >
