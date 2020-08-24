@@ -59,7 +59,7 @@ function Listing() {
                 ))}
               </Carousel>
               <Box className={classes.box}>
-                <Link href={`/details/${car.lot}`} style={{ display: 'flex' }}>
+                <Link style={{ display: 'flex' }}>
                   <Typography variant="h5" style={{ display: 'inline', flexGrow: '1' }}>
                     {car.year} {car.make} {car.model}
                   </Typography>
