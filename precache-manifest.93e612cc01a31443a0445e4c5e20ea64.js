@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0379cb000de62b1484a314a101f1fa0f",
+    "revision": "a1ea79ab0bc4c0d0b48ffd5872343046",
     "url": "/carmazad/index.html"
   },
   {
-    "revision": "ee35266edbaa79a630fb",
+    "revision": "2c7847f25db0876151eb",
     "url": "/carmazad/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/carmazad/static/js/2.4ffb1ead.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ee35266edbaa79a630fb",
-    "url": "/carmazad/static/js/main.6bd3696b.chunk.js"
+    "revision": "2c7847f25db0876151eb",
+    "url": "/carmazad/static/js/main.1c02b100.chunk.js"
   },
   {
     "revision": "f7deb8bdfed1971f7bf8",

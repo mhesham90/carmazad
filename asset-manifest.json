@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/carmazad/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/carmazad/static/js/main.6bd3696b.chunk.js",
-    "main.js.map": "/carmazad/static/js/main.6bd3696b.chunk.js.map",
+    "main.js": "/carmazad/static/js/main.1c02b100.chunk.js",
+    "main.js.map": "/carmazad/static/js/main.1c02b100.chunk.js.map",
     "runtime-main.js": "/carmazad/static/js/runtime-main.ccedc530.js",
     "runtime-main.js.map": "/carmazad/static/js/runtime-main.ccedc530.js.map",
     "static/js/2.4ffb1ead.chunk.js": "/carmazad/static/js/2.4ffb1ead.chunk.js",
     "static/js/2.4ffb1ead.chunk.js.map": "/carmazad/static/js/2.4ffb1ead.chunk.js.map",
     "index.html": "/carmazad/index.html",
-    "precache-manifest.87850171265fbb10de73e79a989401f4.js": "/carmazad/precache-manifest.87850171265fbb10de73e79a989401f4.js",
+    "precache-manifest.93e612cc01a31443a0445e4c5e20ea64.js": "/carmazad/precache-manifest.93e612cc01a31443a0445e4c5e20ea64.js",
     "service-worker.js": "/carmazad/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/carmazad/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.4ffb1ead.chunk.js.LICENSE.txt": "/carmazad/static/js/2.4ffb1ead.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.ccedc530.js",
     "static/js/2.4ffb1ead.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.6bd3696b.chunk.js"
+    "static/js/main.1c02b100.chunk.js"
   ]
 }
