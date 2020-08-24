@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/carmazad/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/carmazad/static/js/main.1380c579.chunk.js",
-    "main.js.map": "/carmazad/static/js/main.1380c579.chunk.js.map",
+    "main.js": "/carmazad/static/js/main.60c6e2e0.chunk.js",
+    "main.js.map": "/carmazad/static/js/main.60c6e2e0.chunk.js.map",
     "runtime-main.js": "/carmazad/static/js/runtime-main.ccedc530.js",
     "runtime-main.js.map": "/carmazad/static/js/runtime-main.ccedc530.js.map",
-    "static/js/2.593360ec.chunk.js": "/carmazad/static/js/2.593360ec.chunk.js",
-    "static/js/2.593360ec.chunk.js.map": "/carmazad/static/js/2.593360ec.chunk.js.map",
+    "static/js/2.4de11b27.chunk.js": "/carmazad/static/js/2.4de11b27.chunk.js",
+    "static/js/2.4de11b27.chunk.js.map": "/carmazad/static/js/2.4de11b27.chunk.js.map",
     "index.html": "/carmazad/index.html",
-    "precache-manifest.d33d223702f9587c47cc20f4873de16c.js": "/carmazad/precache-manifest.d33d223702f9587c47cc20f4873de16c.js",
+    "precache-manifest.b30887d2aeb8203a3a65f2eea1a36050.js": "/carmazad/precache-manifest.b30887d2aeb8203a3a65f2eea1a36050.js",
     "service-worker.js": "/carmazad/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/carmazad/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.593360ec.chunk.js.LICENSE.txt": "/carmazad/static/js/2.593360ec.chunk.js.LICENSE.txt",
+    "static/js/2.4de11b27.chunk.js.LICENSE.txt": "/carmazad/static/js/2.4de11b27.chunk.js.LICENSE.txt",
     "static/media/background.png": "/carmazad/static/media/background.2da124b1.png",
     "static/media/logo2.png": "/carmazad/static/media/logo2.181f277a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ccedc530.js",
-    "static/js/2.593360ec.chunk.js",
+    "static/js/2.4de11b27.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.1380c579.chunk.js"
+    "static/js/main.60c6e2e0.chunk.js"
   ]
 }
